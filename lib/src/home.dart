@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_flutter/src/pages/dongjun.dart';
 import 'package:getx_flutter/src/pages/normal/first.dart';
-import 'package:getx_flutter/src/pages/normal/named/first.dart';
+import 'package:getx_flutter/src/pages/named/first.dart';
+import 'package:getx_flutter/src/pages/simple_state_manage_page.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -55,6 +57,18 @@ class Home extends StatelessWidget {
                 );
               },
               child: const Text('동적 url'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(const SimpleStateManagePage());
+              },
+              child: const Text('단순상태관리'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(const Dongjun());
+              },
+              child: const Text('동준'),
             ),
           ],
         ),

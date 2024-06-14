@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_flutter/src/home.dart';
 import 'package:getx_flutter/src/pages/next.dart';
-import 'package:getx_flutter/src/pages/normal/named/first.dart';
-import 'package:getx_flutter/src/pages/normal/named/second.dart';
+import 'package:getx_flutter/src/pages/named/first.dart';
+import 'package:getx_flutter/src/pages/named/second.dart';
 import 'package:getx_flutter/src/pages/user.dart';
 
 void main() {

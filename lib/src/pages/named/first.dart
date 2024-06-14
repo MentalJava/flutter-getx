@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_flutter/src/pages/normal/named/second.dart';
+import 'package:getx_flutter/src/pages/named/second.dart';
 import 'package:getx_flutter/src/pages/normal/second.dart';
 
 class FirstNamedPage extends StatelessWidget {
