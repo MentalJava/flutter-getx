@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_flutter/src/controller/count_controller_with_getx.dart';
 import 'package:getx_flutter/src/home.dart';
+import 'package:getx_flutter/src/pages/binding.dart';
 import 'package:getx_flutter/src/pages/next.dart';
 import 'package:getx_flutter/src/pages/named/first.dart';
 import 'package:getx_flutter/src/pages/named/second.dart';
@@ -53,6 +55,13 @@ class MyApp extends StatelessWidget {
           page: () => const UserPage(),
           transition: Transition.fadeIn,
         ),
+        GetPage(
+            name: "/binding",
+            page: () => const BindingPage(),
+            transition: Transition.fadeIn,
+            binding: BindingsBuilder(() {
+              Get.put(CountControllerWithGetx());
+            })),
       ],
     );
   }

@@ -11,7 +11,7 @@ class WithGetx extends StatelessWidget {
   Widget _button(String id) {
     return ElevatedButton(
       onPressed: () {
-        _controllerWithGetx.increase(id);
+        _controllerWithGetx.increase();
       },
       child: const Text(
         "+",
