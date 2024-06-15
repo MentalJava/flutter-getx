@@ -9,8 +9,13 @@ import 'package:getx_flutter/src/pages/named/second.dart';
 import 'package:getx_flutter/src/pages/user.dart';
 
 void main() {
+  // initService();
   runApp(const MyApp());
 }
+
+// void initService() {
+//   Get.put(CountControllerWithGetx(), permanent: true);
+// } // GetService 처럼 메모리에서 항상 유지 시킬 수 있음.
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
